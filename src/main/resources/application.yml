@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      max-file-size: 2GB
+      max-request-size: 2GB
+  datasource:
+    url: jdbc:mysql://localhost:3306/filetransfer?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 2000ms
+
+# 文件上传路径配置
+file:
+  upload:
+    path: D:\project\oss\filetransfer
+
+# JWT配置
+jwt:
+  secret: filetransfer_secret
+  expiration: 86400000
+
+logging:
+  level:
+    com.abc.filetransfer: debug

@@ -1,0 +1,70 @@
+@import './theme.css';
+
+html,
+body,
+#app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "HarmonyOS_Sans_Regular", "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+/* 自定义Element UI主题色 */
+:root {
+  --el-color-primary: var(--theme-primary);
+  --el-color-primary-light-1: var(--theme-primary-dark);
+  --el-color-primary-light-2: #4DBBAE;
+  --el-color-primary-light-3: #7AC7C4;
+  --el-color-primary-light-4: #A8DADC;
+  --el-color-primary-light-5: var(--theme-primary-light);
+  --el-color-primary-light-6: #E6FAF8;
+  --el-color-primary-light-7: #F0FBFA;
+  --el-color-primary-light-8: #F8FDFC;
+  --el-color-primary-light-9: #FCFEFD;
+}
+
+/* 通用按钮样式 */
+.el-button--primary {
+  background-color: var(--theme-primary) !important;
+  border-color: var(--theme-primary) !important;
+}
+
+/* 通用卡片样式 */
+.el-card {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid var(--border-light) !important;
+}
+
+/* 表格样式优化 */
+.el-table th {
+  background-color: var(--bg-light) !important;
+}
+
+/* 输入框样式优化 */
+.el-input__inner:focus,
+.el-textarea__inner:focus {
+  border-color: var(--theme-primary) !important;
+}
+
+/* 菜单样式优化 */
+.el-menu-item:focus, 
+.el-menu-item:hover {
+  background-color: var(--navbar-hover-bg) !important;
+  outline: none;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-extra-light);
+}

@@ -1,0 +1,43 @@
+:root {
+  /* 主题色 */
+  --theme-primary: #17B3A3;
+  --theme-primary-light: #E6FAF8;
+  --theme-primary-dark: #0F7A6D;
+  
+  /* 辅助色 */
+  --theme-success: #67C23A;
+  --theme-warning: #E6A23C;
+  --theme-danger: #F56C6C;
+  --theme-info: #909399;
+  
+  /* 文字色 */
+  --text-primary: #303133;
+  --text-regular: #606266;
+  --text-secondary: #909399;
+  --text-placeholder: #C0C4CC;
+  
+  /* 边框色 */
+  --border-base: #DCDFE6;
+  --border-light: #E4E7ED;
+  --border-lighter: #EBEEF5;
+  --border-extra-light: #F2F6FC;
+  
+  /* 背景色 */
+  --bg-base: #FFFFFF;
+  --bg-light: #F5F7FA;
+  --bg-extra-light: #FAFAFA;
+  
+  /* 导航栏背景色 */
+  --navbar-bg: #FFFFFF;
+  --navbar-text: var(--text-primary);
+  --navbar-hover-bg: #F5F7FA;
+  --navbar-active-bg: var(--theme-primary-light);
+  --navbar-active-text: var(--theme-primary);
+  
+  /* 侧边栏背景色 */
+  --sidebar-bg: #FFFFFF;
+  --sidebar-text: var(--text-primary);
+  --sidebar-hover-bg: #F5F7FA;
+  --sidebar-active-bg: var(--theme-primary-light);
+  --sidebar-active-text: var(--theme-primary);
+}
